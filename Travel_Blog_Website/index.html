@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sparsh's Travel Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <section id="pageTitle">
+        <h1>Sparsh's Travel Blog</h1>
+        <h4>A Travel Blog Website by Sparsh Saxena 21BCE6015</h4>
+        </section>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#tips">Travel Tips</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <audio id="backgroundAudio" loop>
+        <source src="files_for_deco\background_audio.mp3" type="audio/mp3">
+    </audio>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var audio = document.getElementById('backgroundAudio');
+            var pageTitle = document.getElementById('pageTitle');
+
+            pageTitle.addEventListener('click', function() {
+                if (audio.paused) {
+                    audio.play();
+                } else {
+                    audio.pause();
+                }
+            });
+        });
+    </script>
+
+    <section id="home">
+        <article>
+            <h2>Welcome to My Journey!</h2>
+            <p>Embark on a journey with us as we explore the beauty of various destinations around the world. Get ready to dive into the culture, history, and breathtaking landscapes that each city has to offer.</p>
+            <figure>
+                <img src="files_for_deco\destination1.jpg" alt="Destination 1">
+                <figcaption>Captivating Views and Exploring the World</figcaption>
+            </figure>
+            <video controls>
+                <source src="files_for_deco\destination1_video.mp4" type="video/mp4">
+            </video>
+        </article>
+    </section>
+
+    <section id="destinations">
+        <h2>Visited Destinations</h2>
+
+        <div class="destination-container">
+            <!-- Paris, France -->
+            <div class="destination">
+                <img src="files_for_deco\paris.jpg" alt="Paris">
+                <h3>Paris, France</h3>
+                <p>The City of Love welcomes you with its iconic Eiffel Tower, charming cafes, and rich history. Explore the Louvre, stroll along the Seine, and indulge in exquisite French cuisine.</p>
+                <video controls>
+                    <source src="files_for_deco\paris_video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <!-- Tokyo, Japan -->
+            <div class="destination">
+                <img src="files_for_deco\tokyo.jpg" alt="Tokyo">
+                <h3>Tokyo, Japan</h3>
+                <p>Experience the perfect blend of tradition and modernity in Tokyo. From historic temples to bustling tech districts, Tokyo offers a unique cultural experience. Don't miss the cherry blossoms in spring!</p>
+                <video controls>
+                    <source src="files_for_deco\tokyo_video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <!-- New York City, USA -->
+            <div class="destination">
+                <img src="files_for_deco\nyc.jpg" alt="New York City">
+                <h3>New York City, USA</h3>
+                <p>The city that never sleeps! Discover the vibrant energy of NYC with its iconic skyline, Broadway shows, and diverse neighborhoods. Central Park and Times Square are must-visit spots.</p>
+                <video controls>
+                    <source src="files_for_deco\nyc_video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <!-- Rome, Italy -->
+            <div class="destination">
+                <img src="files_for_deco\rome.jpg" alt="Rome">
+                <h3>Rome, Italy</h3>
+                <p>Immerse yourself in the history of Rome with its ancient ruins, including the Colosseum and Roman Forum. Indulge in authentic Italian cuisine and make a wish at the Trevi Fountain.</p>
+                <video controls>
+                    <source src="files_for_deco\rome_video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <!-- Sydney, Australia -->
+            <div class="destination">
+                <img src="files_for_deco\sydney.jpg" alt="Sydney">
+                <h3>Sydney, Australia</h3>
+                <p>Experience the laid-back charm of Sydney with its stunning harbor, iconic Opera House, and beautiful beaches. Climb the Sydney Harbour Bridge for panoramic views of the city.</p>
+                <video controls>
+                    <source src="files_for_deco\sydney_video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <section id="tips">
+        <h2>Travel Tips</h2>
+        <p>Make the most of your adventures with these travel tips:</p>
+        <ul>
+            <li>Research local customs and traditions before visiting a new destination.</li>
+            <li>Pack light and efficiently – prioritize essentials and versatile clothing.</li>
+            <li>Use public transportation to immerse yourself in the local culture.</li>
+            <li>Try local cuisine and explore off-the-beaten-path neighborhoods for an authentic experience.</li>
+            <li>Stay connected with locals; they often provide the best recommendations for hidden gems.</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Sparsh's Travel Blog</p>
+    </footer>
+
+</body>
+</html>

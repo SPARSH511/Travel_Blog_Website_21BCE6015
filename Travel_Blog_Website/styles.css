@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('background-image.jpg') center center fixed;
+    background-size: cover;
+    color: #333; /* Black text color */
+}
+
+h1{
+    font-size: 3em;
+}
+
+p {
+    display: inline-block;
+    color: #000; /* Black text color */
+    background-color: #ffeb3b; /* Light Yellow Background */
+    padding: 10px; /* Add some padding for better visual appearance */
+    border-radius: 8px; /* Rounded corners */
+    font-weight: bold;
+}
+
+
+header {
+    background: linear-gradient(to bottom, #2ecc71, #27ae60); /* Dark Green Gradient */
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #218c74; /* Darker Green Background on Hover */
+}
+
+section {
+    padding: 40px 20px;
+}
+
+article {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333; /* Black text color */
+}
+
+h2 {
+    font-size: 32px;
+    color: #fff; /* White text color */
+    font-weight: 600;
+}
+
+figure {
+    margin: 20px 0;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+video,
+audio {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+    display: none;
+}
+
+.destination-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.destination {
+    width: 300px;
+    margin: 20px;
+    background-color: #fff; /* White Background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+}
+
+.destination:hover {
+    transform: translateY(-10px);
+}
+
+.destination:hover video,
+.destination:hover audio {
+    display: block;
+}
+
+.destination img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+    border-radius: 8px 8px 0 0;
+}
+
+.destination h3 {
+    padding: 10px;
+    color: #333; /* Black text color */
+    margin: 0;
+    font-size: 24px;
+}
+
+.destination p {
+    padding: 0 10px 10px;
+    color: #333; /* Black text color */
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    background-color: #e74c3c; /* Red Background */
+    color: #fff; /* Brighter white text color */
+    padding: 8px;
+    border-radius: 4px;
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+li:hover {
+    background-color: #c0392b; /* Darker red background on hover */
+}
+
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    color: #333; /* Black text color */
+    font-size: 16px;
+}
+
+input,
+textarea {
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+input[type="submit"] {
+    background-color: #27ae60; /* Dark Green Background */
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #218c74; /* Darker Green Background on Hover */
+}
+
+.tips {
+    background-color: #fff; /* White Background */
+    padding: 40px 20px;
+}
+
+footer {
+    background: linear-gradient(to top, #2ecc71, #27ae60); /* Dark Green Gradient */
+    color: #fff;
+    text-align: center;
+    padding: 0.2em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+}
